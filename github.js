@@ -11,7 +11,6 @@ class GitHub {
 
         const repoRespon = await fetch(`https://api.github.com/users/${user}/repos?
         client_id=${this.client_id}&client_secret=${this.client_secret}`);
-        console.log(69696, repoRespon);
         const profileData = await profileRespon.json();
         const repoData= await repoRespon.json();
 
